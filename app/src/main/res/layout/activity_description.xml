@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".activities.DescriptionActivity"
+    android:fillViewport="false">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.chirag.project2.utils.SquareImageView
+            android:id="@+id/imageView_poster"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:id="@+id/textView_review_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView_poster"
+            android:text="Large Text"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-light"
+            android:layout_below="@+id/textView_review_title"
+            android:text="New Text" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView_description"
+            android:text="@string/popularity"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_toStartOf="@+id/textView_original_language"
+            android:layout_alignBottom="@+id/textViewPopularity" />
+
+        <TextView
+            android:id="@+id/textViewPopularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-light"
+            android:text="New Text"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_alignEnd="@+id/button_watch_trailer" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/vote_average"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_below="@+id/textViewReleaseDate"
+            android:layout_alignStart="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView_voteAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-light"
+            android:layout_alignTop="@+id/textViewPopularity"
+            android:layout_alignStart="@+id/textViewReleaseDate" />
+
+        <Button
+
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/trailer"
+            android:fontFamily="sans-serif-light"
+            android:id="@+id/button_watch_trailer"
+            android:layout_alignParentStart="true"
+            android:background="@color/cardview_dark_background"
+            android:typeface="normal"
+            android:textColor="#ffffff"
+            android:layout_toStartOf="@+id/space"
+            android:layout_alignBottom="@+id/button_readReview"
+            android:layout_below="@+id/textView" />
+    <android.support.v4.widget.Space
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/space"
+        android:layout_alignTop="@+id/button_readReview"
+        android:layout_centerHorizontal="true" />
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="@string/reviews"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="15dp"
+            android:id="@+id/button_readReview"
+            android:background="@color/cardview_dark_background"
+            android:typeface="normal"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/space" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/language"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView_description"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView_original_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-light"
+            android:text="New Text"
+            android:layout_below="@+id/textView_description"
+            android:layout_alignStart="@+id/textViewPopularity" />
+
+        <TextView
+            android:id="@+id/textViewReleaseDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-light"
+            android:layout_below="@+id/textView_description"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="@string/release_date"
+            android:layout_above="@+id/textView2"
+            android:layout_toEndOf="@+id/space" />
+
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
+

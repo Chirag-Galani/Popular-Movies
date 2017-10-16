@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Project 2</string>
+    <string name="no_internet">No Internet Connection.</string>
+    <string name="review_of">Review of </string>
+    <string name="trailers_of">Trailers of </string>
+    <string name="sorted_by_popularity">Popular Movies: Sorted by Popularity.</string>
+    <string name="no_favourites_found">No Favourites found.</string>
+    <string name="sorted_by_favourite">Popular Movies: Favourites.</string>
+    <string name="sorted_by_rating">Popular Movies: Sorted by Rating.</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="release_date">Release Date: </string>
+    <string name="vote_average">Vote Average: </string>
+    <string name="trailer">Trailer</string>
+    <string name="reviews">Reviews</string>
+    <string name="add_favourites">Add Favourites</string>
+    <string name="remove_favourites">Remove Favourites</string>
+    <string name="popularity">Popularity:</string>
+    <string name="language">Language:</string>
+    <string name="removed_from_fav">Removed from Favourites</string>
+    <string name="add_to_fav">Added to Favourites</string>
+</resources>
